@@ -83,7 +83,7 @@
 #define CONFIG_BOOTARGS \
     BOOTARGS_COMMON " root=/dev/mmcblk0p1"
 #define CONFIG_BOOTCOMMAND \
-    "ext4load mmc 0:1 0x88000000 /boot/vmlinux.img; bootm 0x88000000"
+    "ext4load mmc 0:1 0x88000000 /boot/uImage; bootm 0x88000000"
 
 #else /* !CONFIG_SPL_MMC_SUPPORT */
 
